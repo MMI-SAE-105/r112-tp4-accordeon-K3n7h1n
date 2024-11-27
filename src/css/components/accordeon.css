@@ -1,3 +1,35 @@
 /**
 * Accordeon
 */
+details {
+    /* fermé et ouvert */
+    width: 130px;
+    position: relative;
+    transition: 1s ease;
+    }
+    
+    details[open] {
+    /* ouvert */
+    width: 300px;
+    transition: width 2s;
+    
+    }
+
+
+    .accordeon {
+        display: flex ;
+    }
+
+    details>summary {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    details>div{
+        padding-left: 130px;
+        width: 170px;
+    }
+
+    details summary {
+        transition: all 1s ease-out;
+    }
