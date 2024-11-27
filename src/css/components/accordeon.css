@@ -1,23 +1,21 @@
-/**
-* Accordeon
-*/
+
 details {
-    /* fermé et ouvert */
-    width: 130px;
     position: relative;
-    transition: 1s ease;
+    height: 130px;
+    width: 100px;
+    transition: height 1s ease-out;
     }
     
     details[open] {
     /* ouvert */
-    width: 300px;
-    transition: width 2s;
+    height: 150px;
+    /* height: calc-size(auto, size); */
     
     }
 
 
     .accordeon {
-        display: flex ;
+       
     }
 
     details>summary {
@@ -30,6 +28,4 @@ details {
         width: 170px;
     }
 
-    details summary {
-        transition: all 1s ease-out;
-    }
+    
